@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estudo de HTML</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="Gleilson Alves">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+    </head>
+    <body background="./img/back.jpg">
+        <form class="formulario" method="POST">
+            <p>Formulário</p>
+
+            <div class="field">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
+            </div>
+
+            <div class="field">
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br>
+            </div>
+
+            <div class="field">
+                <label for="idade">Idade: </label>
+                <input type="number" id="idade" name="idade" placeholder="Informe sua idade"><br><br>
+            </div>
+
+            <div class="field radiobox">
+                <span> Sexo: </span><br>
+                <input type="radio" id="masculino" name="sexo" value="masculino"><label for="masc">Masculino</label><br>
+                <input type="radio" id="feminino" name="sexo" value="feminino"><label for="fem">Feminino</label><br><br>
+            </div>
+            
+            <div class="field">
+                <label for="profissao"> Profissão: </label>
+                <input type="text" id="profissao" name="profissao" placeholder="Informe sua profissão"><br><br>
+            </div>
+            
+            <div class="field radiobox">
+                <span> Trabalhando atualmente: </span><br>
+                <input type="radio" id="sim" name="trabalho" value="sim"><label for="sim">Sim</label><br>
+                <input type="radio" id="nao" name="trabalho" value="nao"><label for="nao">Não</label><br><br>
+            </div>    
+
+            <div class="field">
+                <label for="estados">Informe seu estado: </label>
+                <select name="estados" id="estados" class="field">
+                    <option>AL <option>AP <option>AM <option>BA <option>CE
+                    <option>DF <option>ES <option>GO <option>MA <option>MT
+                    <option>MS <option>MG <option>PA <option>PB <option>PR
+                    <option>PE <option>PI <option>RJ <option>RN <option>RS
+                    <option>RO <option>RR <option>SC <option>SP <option>SE
+                    <option>TO
+                </select><br><br>
+            </div>
+
+            <div class="field">
+                <label for="mensagem">Informe áreas de preferência profissinal: </label><br>
+                <textarea name="mensagem" id="mensagem" placeholder="Digite aqui..." rows="2" cols="40" required></textarea><br>
+            </div>
+            <div> 
+                <input type="submit" name="enviar" value="Enviar">
+                <input type="reset" name="limpar" value="Limpar">
+                <input type="hidden" name="cpf" value="verdadeiro"><br><br>
+            </div>   
+            
+            <div align="center">
+                <label>Curte ai um videozinho do nosso canal no YouTube.</label><br>
+                <a href="https://www.youtube.com/watch?v=hKQQUlekSNY" target="_blank">Click Aqui!</a>
+            </div>  
+        </form>
+
+    </body>
+</html>
